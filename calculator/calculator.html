@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="style.css">
+	</head> 
+	<body> 
+		<b>
+		<form Name="cal" id="container"> 
+			<table border="10" align="center"> 
+				<tr> 
+					<td colspan=4 bgcolor=white>
+						<input type=text Name="display">
+					</td> 
+				</tr> 
+				<tr> 
+					<td>
+						<input type=button value="7" OnClick="cal.display.value+='7'">
+					</td> 
+					<td>
+						<input type=button value="8" OnClick="cal.display.value+='8'">
+					</td> 
+					<td>
+						<input type=button value="9" OnClick="cal.display.value+='9'">
+					</td> 
+					<td>
+						<input type=button value="cl" OnClick="cal.display.value=' '">
+					</td> 
+				</tr> 
+				<tr> 
+					<td>
+						<input type=button value="4" OnClick="cal.display.value+='4'">
+					</td> 
+					<td><input type=button value="5" OnClick="cal.display.value+='5'">
+					</td> 
+					<td>
+						<input type=button value="6" OnClick="cal.display.value+='6'">
+					</td> 
+					<td>
+						<input type=button value="/" OnClick="cal.display.value+='/'">
+					</td> 
+				</tr> 
+				<tr> 
+					<td>
+						<input type=button value="1" OnClick="cal.display.value+='1'">
+					</td> 
+					<td>
+						<input type=button value="2" OnClick="cal.display.value+='2'">
+					</td> 
+					<td>
+						<input type=button value="3" OnClick="cal.display.value+='3'">
+					</td> 
+					<td>
+						<input type=button value="x" OnClick="cal.display.value+='*'">
+					</td> 
+				</tr> 
+				<tr> 
+					<td>
+						<input type=button value="0" OnClick="cal.display.value+='0'">
+					</td> 
+					<td>
+					<input type=button value="." OnClick="cal.display.value+='.'">
+					</td> 
+					<td>
+						<input type=button value="=" OnClick="cal.display.value=eval(cal.display.value)">
+					</td> 
+					<td>
+						<input type=button value="+" OnClick="cal.display.value+='+'">
+					</td> 
+				</tr> 
+
+			</table> 
+		</form> 
+
+	</body> 
+	</html>
